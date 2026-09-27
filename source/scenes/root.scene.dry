@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Xinhai Revolution: An Alternate History
 
 @start_menu_2
 
@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 1912;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -33,7 +33,7 @@ Q.historical_mode = 0;
 Q.old_demographics = 0;
 // use decimals for reichstag seats
 // TODO: not yet implemented
-Q.use_decimals = 0;
+Q.use_decimals = 1;
 // TODO: detailed difficulty settinigs
 Q.annual_income = 0;
 Q.saves_disabled = 0;
@@ -517,7 +517,7 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
+Q.next_election_year = 1913;
 Q.next_election_month = 5;
 Q.next_election_time = 5;
 // government affairs timers
@@ -599,7 +599,7 @@ new-page: true
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+For more information on the politics and government of the Republic of China, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @1928_easy: Begin (easy difficulty)
 - @1928_main: Begin (normal difficulty)
@@ -646,11 +646,10 @@ go-to: 1928_main
 go-to: custom_difficulty
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
-new-page: true
+audio: shuffle music/music.mp3
 go-to: main if hand_size == 3; main.main_easy if hand_size == 4
 
-= 1928
+= 1912
 
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
